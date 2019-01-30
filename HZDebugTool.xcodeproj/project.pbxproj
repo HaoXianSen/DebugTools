@@ -1,0 +1,614 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4A43413C22003BE300B317B2 /* HZWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A43413B22003BE300B317B2 /* HZWeakProxy.m */; };
+		4A5530AA21EF156C007B8E5B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A5530A921EF156C007B8E5B /* AppDelegate.m */; };
+		4A5530AD21EF156C007B8E5B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A5530AC21EF156C007B8E5B /* ViewController.m */; };
+		4A5530B021EF156C007B8E5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A5530AE21EF156C007B8E5B /* Main.storyboard */; };
+		4A5530B221EF156E007B8E5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A5530B121EF156E007B8E5B /* Assets.xcassets */; };
+		4A5530B521EF156E007B8E5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A5530B321EF156E007B8E5B /* LaunchScreen.storyboard */; };
+		4A5530B821EF156E007B8E5B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A5530B721EF156E007B8E5B /* main.m */; };
+		4A5530C221EF156E007B8E5B /* HZDebugToolTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A5530C121EF156E007B8E5B /* HZDebugToolTests.m */; };
+		4A5530CD21EF156E007B8E5B /* HZDebugToolUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A5530CC21EF156E007B8E5B /* HZDebugToolUITests.m */; };
+		4A5530DC21EF159A007B8E5B /* HZDebugManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A5530DB21EF159A007B8E5B /* HZDebugManager.m */; };
+		4A5530DF21EF1867007B8E5B /* HZDebugView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A5530DE21EF1867007B8E5B /* HZDebugView.m */; };
+		4A5530E121F099F8007B8E5B /* timg-2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 4A5530E021F099F8007B8E5B /* timg-2.jpeg */; };
+		4A88DA9221F1CB1100450E9B /* HZGestureResponder.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A88DA9121F1CB1100450E9B /* HZGestureResponder.m */; };
+		4A88DA9521F6BCBF00450E9B /* HZDebugTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A88DA9421F6BCBF00450E9B /* HZDebugTool.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4A5530BE21EF156E007B8E5B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A55309D21EF156C007B8E5B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4A5530A421EF156C007B8E5B;
+			remoteInfo = HZDebugTool;
+		};
+		4A5530C921EF156E007B8E5B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A55309D21EF156C007B8E5B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4A5530A421EF156C007B8E5B;
+			remoteInfo = HZDebugTool;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4A43413A22003BE300B317B2 /* HZWeakProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HZWeakProxy.h; sourceTree = "<group>"; };
+		4A43413B22003BE300B317B2 /* HZWeakProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HZWeakProxy.m; sourceTree = "<group>"; };
+		4A5530A521EF156C007B8E5B /* HZDebugTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HZDebugTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A5530A821EF156C007B8E5B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4A5530A921EF156C007B8E5B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4A5530AB21EF156C007B8E5B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		4A5530AC21EF156C007B8E5B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		4A5530AF21EF156C007B8E5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4A5530B121EF156E007B8E5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4A5530B421EF156E007B8E5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4A5530B621EF156E007B8E5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A5530B721EF156E007B8E5B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4A5530BD21EF156E007B8E5B /* HZDebugToolTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HZDebugToolTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A5530C121EF156E007B8E5B /* HZDebugToolTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HZDebugToolTests.m; sourceTree = "<group>"; };
+		4A5530C321EF156E007B8E5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A5530C821EF156E007B8E5B /* HZDebugToolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HZDebugToolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A5530CC21EF156E007B8E5B /* HZDebugToolUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HZDebugToolUITests.m; sourceTree = "<group>"; };
+		4A5530CE21EF156E007B8E5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A5530DA21EF159A007B8E5B /* HZDebugManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HZDebugManager.h; sourceTree = "<group>"; };
+		4A5530DB21EF159A007B8E5B /* HZDebugManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HZDebugManager.m; sourceTree = "<group>"; };
+		4A5530DD21EF1867007B8E5B /* HZDebugView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HZDebugView.h; sourceTree = "<group>"; };
+		4A5530DE21EF1867007B8E5B /* HZDebugView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HZDebugView.m; sourceTree = "<group>"; };
+		4A5530E021F099F8007B8E5B /* timg-2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "timg-2.jpeg"; sourceTree = "<group>"; };
+		4A88DA9021F1CB1100450E9B /* HZGestureResponder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZGestureResponder.h; sourceTree = "<group>"; };
+		4A88DA9121F1CB1100450E9B /* HZGestureResponder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HZGestureResponder.m; sourceTree = "<group>"; };
+		4A88DA9321F6BCBF00450E9B /* HZDebugTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HZDebugTool.h; sourceTree = "<group>"; };
+		4A88DA9421F6BCBF00450E9B /* HZDebugTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HZDebugTool.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4A5530A221EF156C007B8E5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A5530BA21EF156E007B8E5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A5530C521EF156E007B8E5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4A55309C21EF156C007B8E5B = {
+			isa = PBXGroup;
+			children = (
+				4A5530A721EF156C007B8E5B /* HZDebugTool */,
+				4A5530C021EF156E007B8E5B /* HZDebugToolTests */,
+				4A5530CB21EF156E007B8E5B /* HZDebugToolUITests */,
+				4A5530A621EF156C007B8E5B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4A5530A621EF156C007B8E5B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4A5530A521EF156C007B8E5B /* HZDebugTool.app */,
+				4A5530BD21EF156E007B8E5B /* HZDebugToolTests.xctest */,
+				4A5530C821EF156E007B8E5B /* HZDebugToolUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4A5530A721EF156C007B8E5B /* HZDebugTool */ = {
+			isa = PBXGroup;
+			children = (
+				4A5530A821EF156C007B8E5B /* AppDelegate.h */,
+				4A5530A921EF156C007B8E5B /* AppDelegate.m */,
+				4A5530AB21EF156C007B8E5B /* ViewController.h */,
+				4A5530AC21EF156C007B8E5B /* ViewController.m */,
+				4A5530DA21EF159A007B8E5B /* HZDebugManager.h */,
+				4A5530DB21EF159A007B8E5B /* HZDebugManager.m */,
+				4A88DA9321F6BCBF00450E9B /* HZDebugTool.h */,
+				4A88DA9421F6BCBF00450E9B /* HZDebugTool.m */,
+				4A5530DD21EF1867007B8E5B /* HZDebugView.h */,
+				4A5530DE21EF1867007B8E5B /* HZDebugView.m */,
+				4A88DA9021F1CB1100450E9B /* HZGestureResponder.h */,
+				4A88DA9121F1CB1100450E9B /* HZGestureResponder.m */,
+				4A43413A22003BE300B317B2 /* HZWeakProxy.h */,
+				4A43413B22003BE300B317B2 /* HZWeakProxy.m */,
+				4A5530E021F099F8007B8E5B /* timg-2.jpeg */,
+				4A5530AE21EF156C007B8E5B /* Main.storyboard */,
+				4A5530B121EF156E007B8E5B /* Assets.xcassets */,
+				4A5530B321EF156E007B8E5B /* LaunchScreen.storyboard */,
+				4A5530B621EF156E007B8E5B /* Info.plist */,
+				4A5530B721EF156E007B8E5B /* main.m */,
+			);
+			path = HZDebugTool;
+			sourceTree = "<group>";
+		};
+		4A5530C021EF156E007B8E5B /* HZDebugToolTests */ = {
+			isa = PBXGroup;
+			children = (
+				4A5530C121EF156E007B8E5B /* HZDebugToolTests.m */,
+				4A5530C321EF156E007B8E5B /* Info.plist */,
+			);
+			path = HZDebugToolTests;
+			sourceTree = "<group>";
+		};
+		4A5530CB21EF156E007B8E5B /* HZDebugToolUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4A5530CC21EF156E007B8E5B /* HZDebugToolUITests.m */,
+				4A5530CE21EF156E007B8E5B /* Info.plist */,
+			);
+			path = HZDebugToolUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4A5530A421EF156C007B8E5B /* HZDebugTool */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A5530D121EF156E007B8E5B /* Build configuration list for PBXNativeTarget "HZDebugTool" */;
+			buildPhases = (
+				4A5530A121EF156C007B8E5B /* Sources */,
+				4A5530A221EF156C007B8E5B /* Frameworks */,
+				4A5530A321EF156C007B8E5B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HZDebugTool;
+			productName = HZDebugTool;
+			productReference = 4A5530A521EF156C007B8E5B /* HZDebugTool.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4A5530BC21EF156E007B8E5B /* HZDebugToolTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A5530D421EF156E007B8E5B /* Build configuration list for PBXNativeTarget "HZDebugToolTests" */;
+			buildPhases = (
+				4A5530B921EF156E007B8E5B /* Sources */,
+				4A5530BA21EF156E007B8E5B /* Frameworks */,
+				4A5530BB21EF156E007B8E5B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4A5530BF21EF156E007B8E5B /* PBXTargetDependency */,
+			);
+			name = HZDebugToolTests;
+			productName = HZDebugToolTests;
+			productReference = 4A5530BD21EF156E007B8E5B /* HZDebugToolTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4A5530C721EF156E007B8E5B /* HZDebugToolUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A5530D721EF156E007B8E5B /* Build configuration list for PBXNativeTarget "HZDebugToolUITests" */;
+			buildPhases = (
+				4A5530C421EF156E007B8E5B /* Sources */,
+				4A5530C521EF156E007B8E5B /* Frameworks */,
+				4A5530C621EF156E007B8E5B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4A5530CA21EF156E007B8E5B /* PBXTargetDependency */,
+			);
+			name = HZDebugToolUITests;
+			productName = HZDebugToolUITests;
+			productReference = 4A5530C821EF156E007B8E5B /* HZDebugToolUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4A55309D21EF156C007B8E5B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = DangDang;
+				TargetAttributes = {
+					4A5530A421EF156C007B8E5B = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					4A5530BC21EF156E007B8E5B = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 4A5530A421EF156C007B8E5B;
+					};
+					4A5530C721EF156E007B8E5B = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 4A5530A421EF156C007B8E5B;
+					};
+				};
+			};
+			buildConfigurationList = 4A5530A021EF156C007B8E5B /* Build configuration list for PBXProject "HZDebugTool" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4A55309C21EF156C007B8E5B;
+			productRefGroup = 4A5530A621EF156C007B8E5B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4A5530A421EF156C007B8E5B /* HZDebugTool */,
+				4A5530BC21EF156E007B8E5B /* HZDebugToolTests */,
+				4A5530C721EF156E007B8E5B /* HZDebugToolUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4A5530A321EF156C007B8E5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A5530B521EF156E007B8E5B /* LaunchScreen.storyboard in Resources */,
+				4A5530B221EF156E007B8E5B /* Assets.xcassets in Resources */,
+				4A5530B021EF156C007B8E5B /* Main.storyboard in Resources */,
+				4A5530E121F099F8007B8E5B /* timg-2.jpeg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A5530BB21EF156E007B8E5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A5530C621EF156E007B8E5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4A5530A121EF156C007B8E5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A5530AD21EF156C007B8E5B /* ViewController.m in Sources */,
+				4A5530B821EF156E007B8E5B /* main.m in Sources */,
+				4A5530AA21EF156C007B8E5B /* AppDelegate.m in Sources */,
+				4A5530DC21EF159A007B8E5B /* HZDebugManager.m in Sources */,
+				4A88DA9221F1CB1100450E9B /* HZGestureResponder.m in Sources */,
+				4A5530DF21EF1867007B8E5B /* HZDebugView.m in Sources */,
+				4A43413C22003BE300B317B2 /* HZWeakProxy.m in Sources */,
+				4A88DA9521F6BCBF00450E9B /* HZDebugTool.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A5530B921EF156E007B8E5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A5530C221EF156E007B8E5B /* HZDebugToolTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A5530C421EF156E007B8E5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A5530CD21EF156E007B8E5B /* HZDebugToolUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4A5530BF21EF156E007B8E5B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4A5530A421EF156C007B8E5B /* HZDebugTool */;
+			targetProxy = 4A5530BE21EF156E007B8E5B /* PBXContainerItemProxy */;
+		};
+		4A5530CA21EF156E007B8E5B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4A5530A421EF156C007B8E5B /* HZDebugTool */;
+			targetProxy = 4A5530C921EF156E007B8E5B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4A5530AE21EF156C007B8E5B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4A5530AF21EF156C007B8E5B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4A5530B321EF156E007B8E5B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4A5530B421EF156E007B8E5B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4A5530CF21EF156E007B8E5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4A5530D021EF156E007B8E5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4A5530D221EF156E007B8E5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q7XTNF769W;
+				INFOPLIST_FILE = HZDebugTool/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dangdang.HZDebugTool;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4A5530D321EF156E007B8E5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q7XTNF769W;
+				INFOPLIST_FILE = HZDebugTool/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dangdang.HZDebugTool;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4A5530D521EF156E007B8E5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HZDebugToolTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dangdang.HZDebugToolTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HZDebugTool.app/HZDebugTool";
+			};
+			name = Debug;
+		};
+		4A5530D621EF156E007B8E5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HZDebugToolTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dangdang.HZDebugToolTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HZDebugTool.app/HZDebugTool";
+			};
+			name = Release;
+		};
+		4A5530D821EF156E007B8E5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HZDebugToolUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dangdang.HZDebugToolUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HZDebugTool;
+			};
+			name = Debug;
+		};
+		4A5530D921EF156E007B8E5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HZDebugToolUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dangdang.HZDebugToolUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HZDebugTool;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4A5530A021EF156C007B8E5B /* Build configuration list for PBXProject "HZDebugTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A5530CF21EF156E007B8E5B /* Debug */,
+				4A5530D021EF156E007B8E5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A5530D121EF156E007B8E5B /* Build configuration list for PBXNativeTarget "HZDebugTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A5530D221EF156E007B8E5B /* Debug */,
+				4A5530D321EF156E007B8E5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A5530D421EF156E007B8E5B /* Build configuration list for PBXNativeTarget "HZDebugToolTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A5530D521EF156E007B8E5B /* Debug */,
+				4A5530D621EF156E007B8E5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A5530D721EF156E007B8E5B /* Build configuration list for PBXNativeTarget "HZDebugToolUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A5530D821EF156E007B8E5B /* Debug */,
+				4A5530D921EF156E007B8E5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4A55309D21EF156C007B8E5B /* Project object */;
+}
